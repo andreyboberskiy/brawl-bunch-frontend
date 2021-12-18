@@ -6,6 +6,8 @@ import NavigationHeader from "modules/NavigationHeader";
 import HomePage from "modules/HomePage";
 import SideBar from "modules/SideBar";
 import Community from "modules/Community";
+import Whitepaper from "modules/Whitepaper";
+import Developers from "modules/Developers";
 
 const MainDashboard = () => {
   return (
@@ -14,6 +16,8 @@ const MainDashboard = () => {
       <div className="mainArea">
         <Routes>
           <Route path={routesByName.community} element={<Community />} />
+          <Route path={routesByName.whitepaper} element={<Whitepaper />} />
+          <Route path={routesByName.developers} element={<Developers />} />
         </Routes>
       </div>
     </div>

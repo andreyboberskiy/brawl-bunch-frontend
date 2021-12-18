@@ -1,0 +1,51 @@
+.container {
+  padding: 29px 43px 50px 23px;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+
+.departmentTitle {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.delimiter {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  width: 100%;
+}
+
+.label {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 20px;
+
+  text-align: left;
+
+  &:nth-child(1) {
+    width: 40%;
+  }
+  &:nth-child(2) {
+    width: 50%;
+  }
+  &:nth-child(3) {
+    width: 10%;
+  }
+
+  color: #ffffff;
+}
