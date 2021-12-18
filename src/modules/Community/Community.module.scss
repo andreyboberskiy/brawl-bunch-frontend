@@ -9,10 +9,23 @@
 .smallTotalCard {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 50px;
+
+  z-index: 2;
 }
 .bigTotalCard {
   position: absolute;
-  left: 0;
+  left: 50px;
   bottom: 40px;
+
+  z-index: 2;
+}
+
+.globe {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0 auto;
 }

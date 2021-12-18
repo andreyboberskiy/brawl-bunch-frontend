@@ -29,7 +29,7 @@ const BigTotalCard = () => {
       <img className={s.ballsImg} src={ballsImg} alt="Community balls" />
       <div className="mt-4">
         {stats.map((item, index) => (
-          <StatItem {...item} noMargin={index === 0} />
+          <StatItem key={item.label} {...item} noMargin={index === 0} />
         ))}
       </div>
     </div>
