@@ -1,0 +1,44 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 7px 22px 20px;
+
+  background: $secondary-color;
+  border-radius: 5px;
+}
+
+.chartImg {
+  max-width: 120px;
+  width: 100%;
+}
+
+.darkLabel {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 25px;
+  color: #75779a;
+}
+.darkerLabel {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #75779a;
+  margin-top: 5px;
+}
+.number {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 7px;
+
+  text-align: center;
+
+  color: #ffffff;
+}

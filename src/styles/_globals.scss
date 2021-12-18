@@ -1,8 +1,58 @@
-@import 'variables';
+@import "variables";
 
 @font-face {
-  font-family: 'Walkway Ultrabold';
-  src: url('../assets/fonts/walkwayUltraBold.ttf');
+  font-family: "Kinder Boys";
+  src: url("../assets/fonts/KinderBoys.otf");
+}
+@font-face {
+  font-family: "Beaufort";
+  src: url("../assets/fonts/BeaufortHeavy.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Beaufort";
+  src: url("../assets/fonts/BeaufortMedium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Light.ttf");
+  font-weight: 300;
 }
 
 * {
@@ -13,6 +63,8 @@ body,
 html {
   height: 100%;
   color: $text-color;
+
+  overflow: hidden;
 }
 
 body {
@@ -44,4 +96,15 @@ textarea {
 img,
 svg {
   vertical-align: top;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.mainArea {
+  padding: 20px 50px 0 20px;
+  overflow-y: scroll;
+  width: 100%;
 }

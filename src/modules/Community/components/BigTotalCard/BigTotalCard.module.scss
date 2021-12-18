@@ -1,0 +1,67 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  background: $secondary-color;
+  border-radius: 5px;
+}
+
+.chartImg {
+  max-width: 120px;
+  width: 100%;
+}
+
+.darkLabel {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #75779a;
+}
+.darkLightLabel {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #75779a;
+}
+.darkerLabel {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #75779a;
+  margin-top: 5px;
+}
+.number {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  margin-right: 7px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.ballsImg {
+  margin-top: 25px;
+  max-width: 260px;
+  width: 100%;
+}
+
+.whiteLabel {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  width: 25%;
+
+  color: #ffffff;
+}

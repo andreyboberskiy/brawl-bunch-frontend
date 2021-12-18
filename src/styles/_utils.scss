@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 // Text
 
@@ -36,6 +36,11 @@
   justify-content: center;
   align-items: center;
 }
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // Color
 
@@ -47,18 +52,35 @@
   color: $secondary-color;
 }
 
-.text-color {
-  color: $text-color;
+.secondary-color-bg {
+  background: $secondary-color;
 }
 
-.background-white {
-  background-color: $common-white;
+.text-color {
+  color: $text-color;
 }
 
 .chrome-picker {
   box-shadow: none !important;
 }
 
-.color-gray-6 {
-  color: $gray-6;
+// display
+.w100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+.alignCenter {
+  align-items: center;
 }

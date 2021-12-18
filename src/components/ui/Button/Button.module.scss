@@ -1,17 +1,30 @@
 @import "styles/variables";
+@import "styles/spacing";
 
 .container {
-  padding: 18px 36px;
-  background-color: $blue-color;
+  padding: 18px 36px 15px;
+  cursor: pointer;
+}
 
+.squaredBorders {
   clip-path: polygon(
-    8% 0,
-    92% 0,
-    100% 8%,
-    100% 91%,
-    91% 100%,
-    7% 100%,
-    0 89%,
-    0 9%
+    5px 0,
+    calc(100% - 5px) 0,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0 calc(100% - 5px),
+    0 5px
   );
+}
+
+.blue {
+  background-color: $blue-color;
+}
+
+.text {
+  font-family: $font-family-title;
+  font-size: 17px;
+  line-height: 17px;
 }

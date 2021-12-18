@@ -1,0 +1,27 @@
+@import "styles/variables";
+
+.container {
+  padding: 8px 50px;
+}
+
+.logoText {
+  font-family: "Kinder Boys", sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 63px;
+}
+
+.buttonText {
+  font-size: 17px;
+  line-height: 19px;
+  color: $primary-color;
+  font-family: $font-family-title;
+
+  padding: 0 15px;
+
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+}

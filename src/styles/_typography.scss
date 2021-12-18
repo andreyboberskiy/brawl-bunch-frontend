@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 html {
   font-size: $font-size-main;
@@ -67,10 +67,6 @@ h6 {
   font-size: $font-size-big;
 }
 
-.text-gray {
-  color: $gray-1;
-}
-
 .font-title {
   @include font-title();
 }
@@ -97,7 +93,7 @@ h6 {
     line-height: 1.6;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0.6em;
       left: 0;
