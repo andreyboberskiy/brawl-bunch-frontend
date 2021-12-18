@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brawl-bunch-frontend/static/css/main.b2af5f9b.css",
-    "main.js": "/brawl-bunch-frontend/static/js/main.1b20feef.js",
+    "main.css": "/brawl-bunch-frontend/static/css/main.ce38bc2d.css",
+    "main.js": "/brawl-bunch-frontend/static/js/main.2f3b5bf9.js",
     "static/media/KinderBoys.otf": "/brawl-bunch-frontend/static/media/KinderBoys.789350adecde3f8b1b85.otf",
     "static/media/Montserrat-Regular.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Montserrat-Bold.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
@@ -15,11 +15,11 @@
     "static/media/BeaufortHeavy.ttf": "/brawl-bunch-frontend/static/media/BeaufortHeavy.18587b8293dbd9c16a2f.ttf",
     "static/media/BeaufortMedium.ttf": "/brawl-bunch-frontend/static/media/BeaufortMedium.e38c5aa5eb8d02d48c87.ttf",
     "index.html": "/brawl-bunch-frontend/index.html",
-    "main.b2af5f9b.css.map": "/brawl-bunch-frontend/static/css/main.b2af5f9b.css.map",
-    "main.1b20feef.js.map": "/brawl-bunch-frontend/static/js/main.1b20feef.js.map"
+    "main.ce38bc2d.css.map": "/brawl-bunch-frontend/static/css/main.ce38bc2d.css.map",
+    "main.2f3b5bf9.js.map": "/brawl-bunch-frontend/static/js/main.2f3b5bf9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2af5f9b.css",
-    "static/js/main.1b20feef.js"
+    "static/css/main.ce38bc2d.css",
+    "static/js/main.2f3b5bf9.js"
   ]
 }
