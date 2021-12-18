@@ -1,0 +1,17 @@
+@import "styles/variables";
+
+.container {
+  padding: 18px 36px;
+  background-color: $blue-color;
+
+  clip-path: polygon(
+    8% 0,
+    92% 0,
+    100% 8%,
+    100% 91%,
+    91% 100%,
+    7% 100%,
+    0 89%,
+    0 9%
+  );
+}
