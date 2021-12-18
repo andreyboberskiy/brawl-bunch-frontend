@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/brawl-bunch-frontend/static/css/main.b2af5f9b.css",
+    "main.js": "/brawl-bunch-frontend/static/js/main.1b20feef.js",
+    "static/media/KinderBoys.otf": "/brawl-bunch-frontend/static/media/KinderBoys.789350adecde3f8b1b85.otf",
+    "static/media/Montserrat-Regular.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/brawl-bunch-frontend/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
+    "static/media/Montserrat-Medium.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Medium.e2d60bc49517598c0ce8.ttf",
+    "static/media/Roboto-Medium.ttf": "/brawl-bunch-frontend/static/media/Roboto-Medium.7429a63c09f79a1760b0.ttf",
+    "static/media/Roboto-Regular.ttf": "/brawl-bunch-frontend/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto-Bold.ttf": "/brawl-bunch-frontend/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "static/media/Roboto-Light.ttf": "/brawl-bunch-frontend/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
+    "static/media/balls.png": "/brawl-bunch-frontend/static/media/balls.b4d0e49c351ca8c0690b.png",
+    "static/media/BeaufortHeavy.ttf": "/brawl-bunch-frontend/static/media/BeaufortHeavy.18587b8293dbd9c16a2f.ttf",
+    "static/media/BeaufortMedium.ttf": "/brawl-bunch-frontend/static/media/BeaufortMedium.e38c5aa5eb8d02d48c87.ttf",
+    "index.html": "/brawl-bunch-frontend/index.html",
+    "main.b2af5f9b.css.map": "/brawl-bunch-frontend/static/css/main.b2af5f9b.css.map",
+    "main.1b20feef.js.map": "/brawl-bunch-frontend/static/js/main.1b20feef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2af5f9b.css",
+    "static/js/main.1b20feef.js"
+  ]
+}
