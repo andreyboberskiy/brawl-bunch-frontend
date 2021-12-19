@@ -11,8 +11,8 @@ const Careers = () => (
       Join more than 150 talented people around the world.
     </p>
     <div className={s.cardsContainer}>
-      {vacancies.map((job) => (
-        <JobCard {...job} />
+      {vacancies.map((job, index) => (
+        <JobCard key={index} {...job} />
       ))}
     </div>
   </div>

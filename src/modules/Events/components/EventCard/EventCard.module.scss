@@ -1,0 +1,117 @@
+.container {
+  background: #212936;
+  border-radius: 5px;
+  padding: 20px 25px 30px;
+
+  max-width: 240px;
+  width: 100%;
+
+  transition: all 0.4s linear;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.levelCircle {
+  width: 10px;
+  height: 10px;
+
+  background: #7033ff;
+  border-radius: 50%;
+}
+
+.levelLabel {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #75779a;
+
+  margin-left: 6px;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.lang {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+
+  padding: 5px 15px;
+
+  border-radius: 20px;
+  background: #7033ff;
+}
+
+.desc {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #75779a;
+  margin-top: 20px;
+}
+
+.dateIcon {
+  width: 15px;
+  height: 15px;
+}
+.dateLabel {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #75779a;
+  margin-left: 10px;
+}
+
+.peopleContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  img:not(:first-child) {
+    margin-left: -10px;
+  }
+
+  span {
+    margin-left: 5px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #75779a;
+  }
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  background: #ff5f20;
+  border-radius: 10px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

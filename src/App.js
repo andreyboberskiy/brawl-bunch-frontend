@@ -9,6 +9,7 @@ import Community from "modules/Community";
 import Whitepaper from "modules/Whitepaper";
 import Developers from "modules/Developers";
 import Careers from "modules/Careers";
+import Events from "modules/Events";
 
 const MainDashboard = () => {
   return (
@@ -20,6 +21,7 @@ const MainDashboard = () => {
           <Route path={routesByName.whitepaper} element={<Whitepaper />} />
           <Route path={routesByName.developers} element={<Developers />} />
           <Route path={routesByName.careers} element={<Careers />} />
+          <Route path={routesByName.events} element={<Events />} />
         </Routes>
       </div>
     </div>
