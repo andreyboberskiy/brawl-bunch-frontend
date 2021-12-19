@@ -1,0 +1,34 @@
+.container {
+  padding: 56px;
+}
+
+.title {
+  font-family: Beaufort, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-family: Beaufort, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 23px;
+  text-align: center;
+
+  margin-top: 7px;
+
+  color: #ffffff;
+}
+
+.cardsContainer {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 70px;
+  justify-items: center;
+}

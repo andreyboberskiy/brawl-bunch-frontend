@@ -8,6 +8,7 @@ import SideBar from "modules/SideBar";
 import Community from "modules/Community";
 import Whitepaper from "modules/Whitepaper";
 import Developers from "modules/Developers";
+import Careers from "modules/Careers";
 
 const MainDashboard = () => {
   return (
@@ -18,6 +19,7 @@ const MainDashboard = () => {
           <Route path={routesByName.community} element={<Community />} />
           <Route path={routesByName.whitepaper} element={<Whitepaper />} />
           <Route path={routesByName.developers} element={<Developers />} />
+          <Route path={routesByName.careers} element={<Careers />} />
         </Routes>
       </div>
     </div>

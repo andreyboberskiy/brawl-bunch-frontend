@@ -1,0 +1,70 @@
+@import "styles/variables";
+
+@mixin jobCardText {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 300px;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 30px;
+
+  position: relative;
+  z-index: 3;
+  transition: all 0.4s linear;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px);
+
+    &:before {
+      border-color: #d0a85c;
+    }
+  }
+
+  &:before {
+    transition: all 0.4s linear;
+    content: "";
+    width: 220px;
+    min-height: 220px;
+    background: $secondary-color;
+    transform: rotate(45deg);
+
+    border: 1px solid transparent;
+
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.title {
+  padding-top: 50px;
+  @include jobCardText;
+}
+.date {
+  @include jobCardText;
+  margin-top: 10px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.status {
+  @include jobCardText;
+  margin-top: 25px;
+  font-size: 17px;
+  line-height: 21px;
+  opacity: 0.8;
+}
