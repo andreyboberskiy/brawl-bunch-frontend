@@ -7,8 +7,8 @@ const Developers = () => {
     <div className={s.container}>
       <h3 className={s.title}>Our team</h3>
       <div className="mt-2">
-        {developers.map(({ department, people }) => (
-          <div className="mt-5">
+        {developers.map(({ department, people }, index) => (
+          <div className="mt-5" key={index}>
             <h4 className={s.departmentTitle}> {department}</h4>
             <div className={s.delimiter} />
             {people.map(({ name, position, social }) => (

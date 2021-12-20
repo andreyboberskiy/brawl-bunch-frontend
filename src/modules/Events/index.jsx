@@ -12,7 +12,7 @@ const Events = () => (
     </p>
     <div className={s.eventsContainer}>
       {events.map((event, index) => (
-        <EventCard key={index} {...event} />
+        <EventCard key={index} {...event} className={s.eventCard} />
       ))}
     </div>
   </div>

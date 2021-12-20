@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import PropTypes from "prop-types";
 
 import dateIcon from "assets/images/icons/date.svg";
@@ -20,8 +21,9 @@ const EventCard = ({
   lang,
   dateLabel,
   peopleData,
+  className,
 }) => (
-  <div className={s.container}>
+  <div className={clsx([s.container, className])}>
     <div className="flex alignCenter">
       <span
         className={s.levelCircle}

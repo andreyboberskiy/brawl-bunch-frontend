@@ -1,5 +1,5 @@
 .container {
-  padding: 56px;
+  padding: 56px 0 56px 56px;
 }
 .title {
   font-family: Beaufort, sans-serif;
@@ -25,14 +25,11 @@
 
 .eventsContainer {
   margin-top: 35px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 34px 25px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.eventContainer {
+.eventCard {
   margin-right: 25px;
   margin-bottom: 35px;
-  width: 20%;
 }

@@ -12,7 +12,7 @@ const Careers = () => (
     </p>
     <div className={s.cardsContainer}>
       {vacancies.map((job, index) => (
-        <JobCard key={index} {...job} />
+        <JobCard key={index} {...job} className={s.jobCard} />
       ))}
     </div>
   </div>
