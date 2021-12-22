@@ -82,4 +82,20 @@ export const events = [
     dateLabel: "7 Days",
     peopleData: { count: 5, imgs: [personImg16, personImg17, personImg18] },
   },
+  {
+    levelNumber: 1,
+    title: "Increase confidence with TrustPilot reviews",
+    lang: "English",
+    desc: "Some kind of short description can go here to better explain the recommended task",
+    dateLabel: "2 Days",
+    peopleData: { count: 8, imgs: [personImg1, personImg2, personImg3] },
+  },
+  {
+    levelNumber: 2,
+    title: "Increase confidence with TrustPilot reviews",
+    lang: "Spanish",
+    desc: "Some kind of short description can go here to better explain the recommended task",
+    dateLabel: "5 Days",
+    peopleData: { count: 5, imgs: [personImg4, personImg5, personImg6] },
+  },
 ];

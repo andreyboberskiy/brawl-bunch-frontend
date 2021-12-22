@@ -111,5 +111,10 @@ svg {
   height: calc(100vh - 80px);
   width: 100%;
 
-  margin-right: -17px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.mainArea::-webkit-scrollbar {
+  display: none;
 }

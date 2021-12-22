@@ -11,8 +11,8 @@ const Developers = () => {
           <div className="mt-5" key={index}>
             <h4 className={s.departmentTitle}> {department}</h4>
             <div className={s.delimiter} />
-            {people.map(({ name, position, social }) => (
-              <div className="flex-between">
+            {people.map(({ name, position, social }, index) => (
+              <div className="flex-between" key={index}>
                 <p className={s.label}>{name}</p>
                 <p className={s.label}>{position}</p>
                 <a

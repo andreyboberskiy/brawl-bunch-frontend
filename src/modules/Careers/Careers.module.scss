@@ -1,5 +1,5 @@
 .container {
-  padding: 56px 0 56px 56px;
+  padding: 56px;
 }
 
 .title {
@@ -23,14 +23,24 @@
 
   color: #ffffff;
 }
+//
+//.cardsContainer {
+//  margin-top: 54px;
+//  display: flex;
+//  flex-wrap: wrap;
+//}
 
 .cardsContainer {
-  margin-top: 54px;
-  display: flex;
-  flex-wrap: wrap;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 70px;
 
-.jobCard {
-  margin-bottom: 70px;
-  margin-right: 70px;
+  justify-items: center;
+
+  margin-top: 48px;
 }
+//.jobCard {
+//  margin-bottom: 70px;
+//  margin-right: 70px;
+//}
