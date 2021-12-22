@@ -32,7 +32,9 @@ const EventCard = ({
       <p className={s.levelLabel}>Level {levelNumber}</p>
     </div>
     <h5 className={s.title}>{title}</h5>
-    <span className={s.lang}>{lang}</span>
+    <span className={s.lang} style={{ background: colorsByLevel[levelNumber] }}>
+      {lang}
+    </span>
     <p className={s.desc}>{desc}</p>
     <div className="flex-between mt-4">
       <div className="alignCenter flex">
