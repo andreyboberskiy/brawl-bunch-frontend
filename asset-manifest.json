@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/brawl-bunch-frontend/static/css/main.6037b8f2.css",
-    "main.js": "/brawl-bunch-frontend/static/js/main.e9c52de4.js",
+    "main.css": "/brawl-bunch-frontend/static/css/main.2bbd562f.css",
+    "main.js": "/brawl-bunch-frontend/static/js/main.96d6a580.js",
+    "static/media/home-bg.png": "/brawl-bunch-frontend/static/media/home-bg.ef02b7baf4ed9e2a1fc1.png",
     "static/media/KinderBoys.otf": "/brawl-bunch-frontend/static/media/KinderBoys.789350adecde3f8b1b85.otf",
     "static/media/Montserrat-Regular.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Montserrat-Bold.ttf": "/brawl-bunch-frontend/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
@@ -11,17 +12,18 @@
     "static/media/Roboto-Regular.ttf": "/brawl-bunch-frontend/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/brawl-bunch-frontend/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
     "static/media/Roboto-Light.ttf": "/brawl-bunch-frontend/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
+    "static/media/logo.png": "/brawl-bunch-frontend/static/media/logo.0a57af72e32388d5d5ce.png",
     "static/media/balls.png": "/brawl-bunch-frontend/static/media/balls.b4d0e49c351ca8c0690b.png",
     "static/media/BeaufortHeavy.ttf": "/brawl-bunch-frontend/static/media/BeaufortHeavy.18587b8293dbd9c16a2f.ttf",
     "static/media/BeaufortMedium.ttf": "/brawl-bunch-frontend/static/media/BeaufortMedium.e38c5aa5eb8d02d48c87.ttf",
     "static/media/BeaufortRegular.ttf": "/brawl-bunch-frontend/static/media/BeaufortRegular.57818ffc2188c1bc1616.ttf",
     "static/media/date.svg": "/brawl-bunch-frontend/static/media/date.ddb540d9598413b8cff30d15ab5b5f2d.svg",
     "index.html": "/brawl-bunch-frontend/index.html",
-    "main.6037b8f2.css.map": "/brawl-bunch-frontend/static/css/main.6037b8f2.css.map",
-    "main.e9c52de4.js.map": "/brawl-bunch-frontend/static/js/main.e9c52de4.js.map"
+    "main.2bbd562f.css.map": "/brawl-bunch-frontend/static/css/main.2bbd562f.css.map",
+    "main.96d6a580.js.map": "/brawl-bunch-frontend/static/js/main.96d6a580.js.map"
   },
   "entrypoints": [
-    "static/css/main.6037b8f2.css",
-    "static/js/main.e9c52de4.js"
+    "static/css/main.2bbd562f.css",
+    "static/js/main.96d6a580.js"
   ]
 }
