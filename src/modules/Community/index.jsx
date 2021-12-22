@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 
 import BigTotalCard from "modules/Community/components/BigTotalCard";
@@ -40,6 +41,13 @@ const Community = () => {
 
   const colorInterpolator = (t) => `rgba(57, 222, 190,${Math.sqrt(1 - t)})`;
 
+  const globe = useRef();
+
+  useEffect(() => {
+    globe.current.controls().autoRotate = true;
+    globe.current.controls().autoRotateSpeed = 0.3;
+  }, []);
+
   return (
     <div className={s.container}>
       <div className={s.smallTotalCard}>
@@ -50,6 +58,7 @@ const Community = () => {
       </div>
       <div className={s.globe}>
         <Globe
+          ref={globe}
           ringsData={gData}
           labelsData={gData}
           labelDotRadius={3}
