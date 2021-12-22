@@ -14,12 +14,21 @@
 
 .link {
   padding: 10px 7px 10px 50px;
+  display: flex;
+  align-items: center;
 
-  font-family: $font-family-title;
-  color: $primary-color;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    margin-left: 10px;
+    font-family: $font-family-title;
+    color: $primary-color;
 
-  font-size: 17px;
-  line-height: 19px;
+    font-size: 17px;
+    line-height: 19px;
+  }
 
   &:not(:first-child) {
     margin-top: 14px;

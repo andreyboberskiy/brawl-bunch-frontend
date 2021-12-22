@@ -9,7 +9,7 @@ const SideBar = () => {
   return (
     pathname !== routesByName.home && (
       <div className={s.container}>
-        {links.map(({ label, to }) => (
+        {links.map(({ label, icon, to }) => (
           <NavLink
             key={to}
             className={({ isActive }) =>
@@ -17,7 +17,8 @@ const SideBar = () => {
             }
             to={to}
           >
-            {label}
+            <img src={icon} alt={label} />
+            <p>{label}</p>
           </NavLink>
         ))}
       </div>
