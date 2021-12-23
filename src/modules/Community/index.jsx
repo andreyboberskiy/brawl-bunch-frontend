@@ -14,6 +14,7 @@ const colorInterpolator = (t) => `rgba(57, 222, 190,${Math.sqrt(1 - t)})`;
 
 const globeProps = {
   showGlobe: true,
+  showAtmosphere: false,
   atmosphereColor: "#69A6E5",
   atmosphereAltitude: 0.1,
   globeImageUrl: "//unpkg.com/three-globe/example/img/earth-night.jpg",
@@ -31,6 +32,7 @@ const Community = () => {
     globe.current.pointOfView({ altitude: 2, lat: 40, lng: 40 });
     globe.current.controls().autoRotate = true;
     globe.current.controls().autoRotateSpeed = 0.3;
+    globe.current.controls().enableZoom = false;
   }, []);
 
   const [labelCoords, setLabelCoords] = useState({});
@@ -59,6 +61,14 @@ const Community = () => {
     return () => clearInterval(intervalRef.current);
   }, []);
 
+  const [ready, setReady] = useState(false);
+
+  const handleReady = () => {
+    setTimeout(() => {
+      setReady(true);
+    }, 500);
+  };
+
   return (
     <div className={s.container}>
       <div className={s.smallTotalCard}>
@@ -67,8 +77,15 @@ const Community = () => {
       <div className={s.bigTotalCard}>
         <BigTotalCard />
       </div>
+      <div className={s.borderMask} style={{ opacity: ready ? 1 : 0 }} />
+
       <div className={s.globe}>
-        <Globe ref={globe} ringsData={labels} {...globeProps} />
+        <Globe
+          ref={globe}
+          ringsData={labels}
+          onGlobeReady={handleReady}
+          {...globeProps}
+        />
       </div>
       {labels.map(({ id, ...labelProps }) =>
         labelCoords[id] ? (
