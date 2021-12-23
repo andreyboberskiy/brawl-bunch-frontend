@@ -23,60 +23,8 @@
   position: absolute;
 
   left: 50%;
-  transform: translateX(-50%);
-
-  margin: 0 auto;
-}
-
-.labelContainer {
-  padding: 15px 25px;
-  background: #0f0f29;
-  border-radius: 5px;
-  display: flex;
-
-  min-width: 145px;
-  align-items: center;
-  justify-content: center;
-}
-
-.circleContainer {
-  width: 35px;
-  height: 35px;
-  border: 1px solid;
-
-  border-radius: 50%;
-  margin-right: 10px;
-  position: relative;
-}
-
-.circleText {
-  position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.labelText {
-  p {
-    text-align: left;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: #75779a;
-  }
-
-  a {
-    margin-top: 5px;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    text-decoration-line: underline;
-    color: #ffffff;
-  }
+  margin: 0 auto;
 }

@@ -1,51 +1,62 @@
-import { useEffect, useRef } from "react";
+import { isEqual } from "lodash";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Globe from "react-globe.gl";
 
 import BigTotalCard from "modules/Community/components/BigTotalCard";
 import SmallTotalCard from "modules/Community/components/SmallTotalCard";
+import { Label } from "modules/Community/components/Label";
 
 import { labels } from "modules/Community/config";
 
 import s from "./Community.module.scss";
 
-const colorsByText = {
-  Telegram: { color: "#39DEBE", bg: "rgba(57, 222, 190, 0.2)" },
-  Discord: { color: "#7033FF", bg: "rgba(112, 51, 255, 0.2)" },
-  Facebook: { color: "#F65164", bg: "rgba(246, 81, 100, 0.2)" },
-  Twitter: { color: "#FFA63F", bg: "rgba(255, 166, 63, 0.2)" },
+const colorInterpolator = (t) => `rgba(57, 222, 190,${Math.sqrt(1 - t)})`;
+
+const globeProps = {
+  showGlobe: true,
+  atmosphereColor: "#69A6E5",
+  atmosphereAltitude: 0.1,
+  globeImageUrl: "//unpkg.com/three-globe/example/img/earth-night.jpg",
+  backgroundColor: "#121b24",
+  ringColor: () => colorInterpolator,
+  ringMaxRadius: 3,
+  ringPropagationSpeed: 0.9,
+  ringRepeatPeriod: 700,
 };
 
-const renderLabel = ({ text, link }) =>
-  `<div class="${s.labelContainer}">
-    <div
-      class="${s.circleContainer}"
-      style="border-color: ${colorsByText[text].color}; background-color: ${colorsByText[text].bg};"
-    >
-      <span class="${s.circleText}" style="color: ${colorsByText[text].color}">
-        ${text[0]}
-      </span>
-    </div>
-    <div class="${s.labelText}">
-      <p>${text}</p>
-      <a href={link}>Press to join</a>
-    </div>
-  </div>`;
-
 const Community = () => {
-  const gData = labels.map(({ text, link, lat, lng }, i) => ({
-    lat,
-    lng,
-    text,
-    link,
-  }));
-
-  const colorInterpolator = (t) => `rgba(57, 222, 190,${Math.sqrt(1 - t)})`;
-
   const globe = useRef();
 
   useEffect(() => {
+    globe.current.pointOfView({ altitude: 2, lat: 40, lng: 40 });
     globe.current.controls().autoRotate = true;
     globe.current.controls().autoRotateSpeed = 0.3;
+  }, []);
+
+  const [labelCoords, setLabelCoords] = useState({});
+
+  const intervalRef = useRef();
+
+  const syncLabels = useCallback(() => {
+    const getScreenCoords = globe.current?.getScreenCoords;
+    const newCoords = {};
+
+    labels.forEach(({ lat, lng, id }) => {
+      newCoords[id] = getScreenCoords(lat, lng);
+    });
+
+    setLabelCoords((prev) => {
+      if (!isEqual(newCoords, prev)) {
+        return newCoords;
+      }
+      return prev;
+    });
+  }, []);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(syncLabels, 100);
+
+    return () => clearInterval(intervalRef.current);
   }, []);
 
   return (
@@ -57,27 +68,20 @@ const Community = () => {
         <BigTotalCard />
       </div>
       <div className={s.globe}>
-        <Globe
-          ref={globe}
-          ringsData={gData}
-          labelsData={gData}
-          labelDotRadius={3}
-          labelColor={() => "rgba(255,255,255,0)"}
-          onLabelClick={(s) =>
-            window.open(s.link, "_blank", "noopener,noreferrer")
-          }
-          atmosphereColor="#69A6E5"
-          atmosphereAltitude={0.1}
-          labelAltitude={0.01}
-          labelLabel={renderLabel}
-          globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-          backgroundColor="#121b24"
-          ringColor={() => colorInterpolator}
-          ringMaxRadius={3}
-          ringPropagationSpeed={0.9}
-          ringRepeatPeriod={700}
-        />
+        <Globe ref={globe} ringsData={labels} {...globeProps} />
       </div>
+      {labels.map(({ id, ...labelProps }) =>
+        labelCoords[id] ? (
+          <Label
+            key={id}
+            {...labelProps}
+            style={{
+              left: labelCoords[id]?.x + 130,
+              top: labelCoords[id]?.y - 10,
+            }}
+          />
+        ) : null
+      )}
     </div>
   );
 };
