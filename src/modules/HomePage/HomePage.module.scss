@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - 80px);
+  height: 100%;
 
   background-position: center center;
   background-size: cover;
@@ -18,6 +18,7 @@
     font-family: Beaufort, sans-serif;
     font-weight: 900;
     font-size: 90px;
+    text-align: center;
   }
 
   p {
@@ -30,5 +31,27 @@
     color: #ffffff;
 
     margin-top: 6px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      margin-top: 18px;
+
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 450px) {
+    padding: 30px;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      margin-top: 18px;
+      font-size: 18px;
+    }
   }
 }

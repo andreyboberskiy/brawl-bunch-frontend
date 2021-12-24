@@ -1,5 +1,12 @@
 .container {
   padding: 56px;
+
+  @media (max-width: 500px) {
+    padding: 36px;
+  }
+  @media (max-width: 400px) {
+    padding: 36px 15px;
+  }
 }
 
 .title {
@@ -23,12 +30,6 @@
 
   color: #ffffff;
 }
-//
-//.cardsContainer {
-//  margin-top: 54px;
-//  display: flex;
-//  flex-wrap: wrap;
-//}
 
 .cardsContainer {
   display: grid;
@@ -40,7 +41,3 @@
 
   margin-top: 48px;
 }
-//.jobCard {
-//  margin-bottom: 70px;
-//  margin-right: 70px;
-//}

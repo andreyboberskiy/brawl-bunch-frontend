@@ -1,5 +1,5 @@
-@import 'functions';
-@import 'variables';
+@import "functions";
+@import "variables";
 
 @mixin mx($n) {
   margin-left: spacing($n);
@@ -23,7 +23,7 @@
 
 @mixin responsive-ratio($x, $y) {
   position: relative;
-  $padding: unquote(($y / $x) * 100 + '%');
+  $padding: unquote(($y / $x) * 100 + "%");
   padding-top: $padding;
 }
 
@@ -34,10 +34,10 @@
 }
 
 @mixin circle($d) {
-  width: unquote($d + 'px');
-  height: unquote($d + 'px');
-  min-width: unquote($d + 'px');
-  min-height: unquote($d + 'px');
+  width: unquote($d + "px");
+  height: unquote($d + "px");
+  min-width: unquote($d + "px");
+  min-height: unquote($d + "px");
   border: none;
   border-radius: 50%;
   @include flex-center();
@@ -46,4 +46,24 @@
 @mixin font-title() {
   font-family: $font-family-title;
   letter-spacing: 0.07em;
+}
+
+@mixin header-offset() {
+  //$header-height: 88px;
+  //
+  //@media (max-width: 767px) {
+  //  $header-height: 74px;
+  //}
+  //@media (max-width: 385px) {
+  //  $header-height: 68px;
+  //}
+
+  height: calc(100vh - 88px);
+
+  @media (max-width: 767px) {
+    height: calc(100vh - 74px);
+  }
+  @media (max-width: 385px) {
+    height: calc(100vh - 68px);
+  }
 }

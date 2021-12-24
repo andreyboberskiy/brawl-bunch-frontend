@@ -48,17 +48,39 @@
     position: absolute;
     z-index: -1;
   }
+
+  @media (max-width: 400px) {
+    max-width: 250px;
+    min-height: 250px;
+    padding: 0 10px;
+
+    &:before {
+      width: 200px;
+      min-height: 200px;
+    }
+  }
 }
 
 .title {
   padding-top: 50px;
   @include jobCardText;
+
+  @media (max-width: 400px) {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 .date {
   @include jobCardText;
   margin-top: 10px;
   font-size: 21px;
   line-height: 26px;
+
+  @media (max-width: 400px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .status {

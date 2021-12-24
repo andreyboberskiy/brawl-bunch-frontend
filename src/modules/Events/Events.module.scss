@@ -1,5 +1,9 @@
 .container {
   padding: 56px;
+
+  @media (max-width: 500px) {
+    padding: 36px;
+  }
 }
 .title {
   font-family: Beaufort, sans-serif;
@@ -22,12 +26,6 @@
 
   color: #75779a;
 }
-
-//.eventsContainer {
-//  margin-top: 35px;
-//  display: flex;
-//  flex-wrap: wrap;
-//}
 
 .eventsContainer {
   margin-top: 35px;
