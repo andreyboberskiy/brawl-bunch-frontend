@@ -58,12 +58,5 @@
   //  $header-height: 68px;
   //}
 
-  height: calc(100vh - 88px);
-
-  @media (max-width: 767px) {
-    height: calc(100vh - 74px);
-  }
-  @media (max-width: 385px) {
-    height: calc(100vh - 68px);
-  }
+  height: calc(100vh - 80px);
 }

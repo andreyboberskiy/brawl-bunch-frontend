@@ -1,11 +1,7 @@
 import SideBarContext from "contexts/SidebarContext";
-import { useState, useCallback, useMemo } from "react";
-import { Routes, Route } from "react-router-dom";
-
-import routesByName from "constants/routesByName";
+import { useState, useCallback, useMemo, useEffect } from "react";
 
 import NavigationHeader from "modules/NavigationHeader";
-import HomePage from "modules/HomePage";
 import SideBar from "modules/SideBar";
 import MainArea from "modules/MainArea";
 
@@ -26,7 +22,7 @@ const App = () => {
   }, []);
 
   const sideBar = useMemo(
-    () => ({ sideBarOpen, toggleSideBar }),
+    () => ({ sideBarOpen, toggleSideBar, setSideBarOpen }),
     [sideBarOpen, toggleSideBar]
   );
 
@@ -34,9 +30,7 @@ const App = () => {
     <SideBarContext.Provider value={sideBar}>
       <div className="App">
         <NavigationHeader />
-        <Routes>
-          <Route path="*" element={<MainDashboard />} />
-        </Routes>
+        <MainDashboard />
       </div>
     </SideBarContext.Provider>
   );

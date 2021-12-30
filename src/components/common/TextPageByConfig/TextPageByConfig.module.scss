@@ -1,5 +1,5 @@
 .container {
-  padding: 48px 143px 0 46px;
+  padding: 0 100px 150px 46px;
 
   @media (max-width: 1024px) {
     padding: 48px;
@@ -13,6 +13,22 @@
 }
 
 .headerTitle {
+  margin-top: 48px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.headerSubtitle {
+  margin-top: 48px;
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 700;

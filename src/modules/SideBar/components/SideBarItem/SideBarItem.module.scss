@@ -1,0 +1,82 @@
+@import "styles/variables";
+
+.link {
+  padding: 10px 5px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .iconImg {
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    margin-left: 10px;
+    font-family: $font-family-title;
+    color: $primary-color;
+
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 14px;
+  }
+}
+.linkRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.arrowImg {
+  width: 15px;
+  height: 10px;
+  margin-left: 8px;
+  transition: all 0.4s linear;
+}
+
+.arrowImgActive {
+  transform: rotate(-180deg);
+}
+
+.activeLink {
+  background: #2b3443;
+  border-right: 3px solid #ff5f20;
+  p {
+    color: #fff;
+  }
+}
+
+.anchorsContainer {
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.4s linear;
+
+  height: 0;
+  overflow: hidden;
+
+  span {
+    font-family: Beaufort, sans-serif;
+    font-size: 17px;
+    line-height: 19px;
+    color: #a9b1bd;
+
+    margin-top: 10px;
+    padding-left: 28px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
+
+    transition: all 0.4s linear;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

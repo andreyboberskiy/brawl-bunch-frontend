@@ -10,12 +10,16 @@
   flex-direction: column;
   background: $secondary-color;
   padding-top: 35px;
+  padding-bottom: 35px;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   overflow-y: auto;
 
   transition: all 0.3s ease-in-out;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1360px) {
     position: fixed;
     z-index: 14;
     transform: translateX(-100%);
@@ -26,36 +30,21 @@
   }
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 .sideBarOpen {
-  @media (max-width: 1200px) {
+  @media (max-width: 1360px) {
     transform: translateX(0);
   }
 }
 
-.link {
-  padding: 10px 7px 10px 50px;
-  display: flex;
-  align-items: center;
-
-  img {
-    width: 20px;
-    height: 20px;
-  }
-  p {
-    margin-left: 10px;
-    font-family: $font-family-title;
-    color: $primary-color;
-
-    font-size: 17px;
-    line-height: 19px;
-  }
-
-  &:not(:first-child) {
-    margin-top: 14px;
-  }
+.noOffset {
+  height: 100vh;
 }
 
-.activeLink {
-  background: #2b3443;
-  border-right: 3px solid #d0a85c;
+.headerButtonsContainer {
+  display: flex;
+  flex-direction: column;
 }

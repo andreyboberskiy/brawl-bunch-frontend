@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.container {
+  padding: 10px 5px 10px 50px;
+
+  p {
+    margin-left: 10px;
+    font-family: $font-family-title;
+    color: $primary-color;
+
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  margin-top: 14px;
+}
+
+.inner {
+  position: relative;
+}
+
+.arrowImg {
+  width: 15px;
+  height: 10px;
+  margin-left: 8px;
+  transition: all 0.4s linear;
+}
+
+.arrowImgActive {
+  transform: rotate(-180deg);
+}

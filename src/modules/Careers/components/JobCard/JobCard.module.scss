@@ -31,7 +31,11 @@
     transform: translateY(-10px);
 
     &:before {
-      border-color: #d0a85c;
+      border-image-source: linear-gradient(
+        to bottom,
+        rgba(255, 95, 32, 1),
+        rgba(160, 60, 21, 1)
+      );
     }
   }
 
@@ -43,7 +47,13 @@
     background: $secondary-color;
     transform: rotate(45deg);
 
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba(255, 95, 32, 0),
+      rgba(160, 60, 21, 0)
+    );
 
     position: absolute;
     z-index: -1;

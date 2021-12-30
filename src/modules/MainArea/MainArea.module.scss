@@ -9,6 +9,11 @@
   scrollbar-width: none; /* Firefox */
   position: relative;
   z-index: 1;
+
+  background-position: center top;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-attachment: local;
 }
 
 .mainArea::-webkit-scrollbar {
@@ -30,7 +35,7 @@
 }
 
 .shadowActive {
-  @media (max-width: 1200px) {
+  @media (max-width: 1360px) {
     background: rgba(0, 0, 0, 0.4);
     pointer-events: unset;
   }

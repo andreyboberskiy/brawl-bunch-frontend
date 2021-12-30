@@ -22,8 +22,9 @@ const EventCard = ({
   dateLabel,
   peopleData,
   className,
+  onClick,
 }) => (
-  <div className={clsx([s.container, className])}>
+  <div className={clsx([s.container, className])} onClick={onClick}>
     <div className="flex alignCenter">
       <span
         className={s.levelCircle}
