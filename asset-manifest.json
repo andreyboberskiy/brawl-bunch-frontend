@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brawl-bunch-frontend/static/css/main.2a4c0061.css",
-    "main.js": "/brawl-bunch-frontend/static/js/main.a2745d0e.js",
+    "main.css": "/brawl-bunch-frontend/static/css/main.99c349ee.css",
+    "main.js": "/brawl-bunch-frontend/static/js/main.dc99ab76.js",
     "static/media/home-bg.png": "/brawl-bunch-frontend/static/media/home-bg.ef02b7baf4ed9e2a1fc1.png",
     "static/media/main-area-bg.png": "/brawl-bunch-frontend/static/media/main-area-bg.1c694c1a4d8ac41380b2.png",
     "static/media/bg.png": "/brawl-bunch-frontend/static/media/bg.91625bb915c07a885b63.png",
@@ -28,11 +28,11 @@
     "static/media/briefcase.png": "/brawl-bunch-frontend/static/media/briefcase.81b4bf099310a133d3ae.png",
     "static/media/date.svg": "/brawl-bunch-frontend/static/media/date.ddb540d9598413b8cff30d15ab5b5f2d.svg",
     "index.html": "/brawl-bunch-frontend/index.html",
-    "main.2a4c0061.css.map": "/brawl-bunch-frontend/static/css/main.2a4c0061.css.map",
-    "main.a2745d0e.js.map": "/brawl-bunch-frontend/static/js/main.a2745d0e.js.map"
+    "main.99c349ee.css.map": "/brawl-bunch-frontend/static/css/main.99c349ee.css.map",
+    "main.dc99ab76.js.map": "/brawl-bunch-frontend/static/js/main.dc99ab76.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a4c0061.css",
-    "static/js/main.a2745d0e.js"
+    "static/css/main.99c349ee.css",
+    "static/js/main.dc99ab76.js"
   ]
 }
